@@ -1,0 +1,10 @@
+.btn-filtro{
+    background-color: transparent;
+    font-size: 17px;
+    border: none;
+    padding: 6px;
+}
+
+#icone{
+    transition: 0.5s
+}

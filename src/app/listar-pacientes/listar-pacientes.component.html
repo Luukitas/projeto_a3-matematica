@@ -1,0 +1,63 @@
+<div class="row mt-4">
+    <div class="col-12">
+        <p class="fs-4">Pesquisar paciente</p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Digite" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Pesquisar</button>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12">
+                <button (click)="abrirFecharIcone()" class="btn-filtro">
+                    filtar
+                    <i id="icone" class="bi bi-chevron-down"></i>
+                </button>
+            </div>
+            <div class="col-12">
+                <form action="">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">CPF</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Endereço</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let element of listaPacientes">
+                <td>{{element.cpf}}</td>
+                <td>{{element.nome}}</td>
+                <td>{{element.idade}}</td>
+                <td>{{element.endereco}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
